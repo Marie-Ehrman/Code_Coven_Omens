@@ -36,9 +36,9 @@ public class RaycastSphere : MonoBehaviour
             LightHit health = hit.collider.GetComponent<LightHit>();
 
 
-            if (health != null)
+            if (hit.collider.CompareTag("Interactable"))
             {
-                health.Damage(lightDamage);
+                hit.collider.gameObject.GetComponent<MeshRenderer>().enabled = true;
             }
 
 
