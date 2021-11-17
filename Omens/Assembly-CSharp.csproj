@@ -54,8 +54,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
+    <Compile Include="Assets\Laterns and candles\scripts\CameraFacing.cs" />
+    <Compile Include="Assets\Laterns and candles\scripts\ExtendedFlycam.cs" />
     <Compile Include="Assets\Lowpoly Toon Cat Lite\Demo\Cat_Lite_Demo.cs" />
+    <Compile Include="Assets\One-Click_Wall_Materials\Scenes\Misc\MaterialChanger.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Laterns and candles\Shaders\GlassStainedBumpDistort.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
