@@ -10,8 +10,6 @@ public class RaycastSphere : MonoBehaviour
     public float maxDistance;
     public LayerMask layerMask;
 
-    public int lightDamage = 1;
-
     private Vector3 origin;
     private Vector3 direction;
 
@@ -33,16 +31,18 @@ public class RaycastSphere : MonoBehaviour
             currentHitObject = hit.transform.gameObject;
             currentHitDistance = hit.distance;
 
-            LightHit health = hit.collider.GetComponent<LightHit>();
-
-
-            if (health != null)
+            if (hit.collider.CompareTag("Interactable"))
             {
-                health.Damage(lightDamage);
+                hit.collider.SendMessage("HitByLight");
+
             }
 
+            if (hit.collider.CompareTag("Interactable") && Input.GetButton("Fire1"))
+            {
+                hit.collider.GetComponent<MeshRenderer>().enabled = true;
+            }
 
-
+            
         }
 
         else
