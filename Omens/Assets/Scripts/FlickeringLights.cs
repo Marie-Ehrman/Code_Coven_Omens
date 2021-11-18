@@ -6,23 +6,35 @@ public class FlickeringLights : MonoBehaviour
 {
 
     public Light lights;
-
+    public bool isFlickering = false;
+    public float timeDelay;
 
 
     // Update is called once per frame
     void Update()
     {
-        lights = GetComponent<Light>();
+
+
+
+        if (isFlickering == false) {
             StartCoroutine(FlickeringLight());
-        
+        }
+
     }
 
     IEnumerator FlickeringLight() {
-        
-        while (true)
-        {
-            yield return new WaitForSeconds(1.5f);
-            lights.enabled = !lights.enabled;
-        }
+        lights = GetComponent<Light>();
+
+        isFlickering = true;
+        lights.enabled = false;
+
+        timeDelay = Random.Range(0.01f, 0.5f);
+        yield return new WaitForSeconds(timeDelay);
+
+        lights.enabled = true;
+        timeDelay = Random.Range(0.01f, 0.5f);
+        yield return new WaitForSeconds(timeDelay);
+
+        isFlickering = false;
     }
 }
