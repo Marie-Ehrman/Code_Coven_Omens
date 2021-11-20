@@ -29,28 +29,11 @@ public class OmenActivation : MonoBehaviour
                 GetComponent<MeshRenderer>().enabled = true;
                 gameManager.IncreaseOmens();
                 isActive = true;
-            } 
-
-            /*
-            
-            else if (activationPrimer.GetComponent<SkinnedMeshRenderer>().enabled == true)
-
-            {
-                GetComponent<SkinnedMeshRenderer>().enabled = true;
-                gameManager.IncreaseOmens();
-                isActive = true;
             }
 
-            else if (activationPrimer.GetComponent<SpriteRenderer>().enabled == true)
-
-            {
-                GetComponent<SpriteRenderer>().enabled = true;
-                gameManager.IncreaseOmens();
-                isActive = true;
-            }
-            */
         }
 
-      }
-
     }
+
+     
+}
