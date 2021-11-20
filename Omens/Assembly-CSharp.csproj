@@ -74,6 +74,7 @@
   <ItemGroup>
     <None Include="Assets\MagicMirror\Prefab\Readme.txt" />
     <None Include="Assets\MagicMirror\Prefab\MirrorShader.shader" />
+    <None Include="Assets\OFL.txt" />
     <None Include="Assets\MagicMirror\Prefab\MirrorShaderBumpMap.shader" />
     <None Include="Assets\Laterns and candles\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\MagicMirror\Prefab\MirrorShaderOld.shader" />
