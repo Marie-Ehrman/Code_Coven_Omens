@@ -41715,40 +41715,52 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.718811
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.718811
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.718811
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.1991262
+      value: 5.76
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00053715706
+      value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2754669
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.6167313
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
+      value: -0.30976954
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.6466722
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.32480842
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -53.339
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 92.715004
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ec70826b77d05c46a1d4534b0268a48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -41762,6 +41774,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1000416551}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1000416553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 8ec70826b77d05c46a1d4534b0268a48,
+    type: 3}
+  m_PrefabInstance: {fileID: 1000416551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1000416554
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000416553}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.33134532
+  m_Height: 3.5704186
+  m_Direction: 1
+  m_Center: {x: -0.0000024288893, y: 1.7852093, z: -0.0000006519258}
 --- !u!1 &1000712632
 GameObject:
   m_ObjectHideFlags: 0
@@ -66612,6 +66644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1868328158}
   - component: {fileID: 1868328159}
+  - component: {fileID: 1868328160}
   m_Layer: 0
   m_Name: Spot Light (3)
   m_TagString: Untagged
@@ -66645,10 +66678,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 15.44
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Intensity: 0.5
+  m_Range: 45
+  m_SpotAngle: 179
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -66694,6 +66727,21 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1868328160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868328157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c8a101852bbae408f5aebb6a8c4527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lights: {fileID: 1868328159}
+  isFlickering: 0
+  timeDelay: 0
 --- !u!1001 &1869229054
 PrefabInstance:
   m_ObjectHideFlags: 0
