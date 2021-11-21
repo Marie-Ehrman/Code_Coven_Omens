@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public int sanityStat;
 
     public Text omensCounter;
+    public Collider endGame;
 
 
 
@@ -37,8 +38,9 @@ public class GameManager : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider collider) {
+        print("GAME OVER");
         if (omens == 5) {
-            Debug.Log("GAME OVER");
+            print("GAME OVER");
         }
     }
 }

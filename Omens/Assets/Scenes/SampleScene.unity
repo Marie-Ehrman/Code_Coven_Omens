@@ -1986,7 +1986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4481731013709450, guid: b3e1ae4b20d1a0845a32d4418535010b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.258547
+      value: 7.621474
       objectReference: {fileID: 0}
     - target: {fileID: 4481731013709450, guid: b3e1ae4b20d1a0845a32d4418535010b, type: 3}
       propertyPath: m_LocalScale.y
@@ -1998,7 +1998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4481731013709450, guid: b3e1ae4b20d1a0845a32d4418535010b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.04
+      value: -12.15
       objectReference: {fileID: 0}
     - target: {fileID: 4481731013709450, guid: b3e1ae4b20d1a0845a32d4418535010b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -36797,6 +36797,7 @@ GameObject:
   - component: {fileID: 762873751}
   - component: {fileID: 762873750}
   - component: {fileID: 762873749}
+  - component: {fileID: 762873752}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -36860,6 +36861,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &762873752
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762873748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.41392136
+  m_Height: 1.9454858
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.72855794, z: -0.04}
 --- !u!1 &765260028
 GameObject:
   m_ObjectHideFlags: 0
@@ -41089,6 +41104,12 @@ Transform:
 --- !u!1 &937044744 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1441258180213336, guid: b3e1ae4b20d1a0845a32d4418535010b,
+    type: 3}
+  m_PrefabInstance: {fileID: 61240141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &937044745 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 65703156841842204, guid: b3e1ae4b20d1a0845a32d4418535010b,
     type: 3}
   m_PrefabInstance: {fileID: 61240141}
   m_PrefabAsset: {fileID: 0}
@@ -73207,6 +73228,7 @@ MonoBehaviour:
   luckStat: 0
   sanityStat: 0
   omensCounter: {fileID: 1792480177}
+  endGame: {fileID: 937044745}
 --- !u!1 &1606886880
 GameObject:
   m_ObjectHideFlags: 0
