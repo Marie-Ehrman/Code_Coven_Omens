@@ -37,10 +37,5 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider collider) {
-        print("GAME OVER");
-        if (omens == 5) {
-            print("GAME OVER");
-        }
-    }
+
 }
