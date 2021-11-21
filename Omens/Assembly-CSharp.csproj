@@ -62,6 +62,7 @@
     <Compile Include="Assets\MagicMirror\Prefab\MirrorReflectionScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorScript.cs" />
     <Compile Include="Assets\One-Click_Wall_Materials\Scenes\Misc\MaterialChanger.cs" />
+    <Compile Include="Assets\Scripts\CountDown.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Flashlight Stuff\HintSparkles.cs" />
     <Compile Include="Assets\Scripts\Flashlight Stuff\LightHit.cs" />
