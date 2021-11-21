@@ -36,9 +36,9 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void GameOver() {
-        if (omens == 5) { 
-            
+    void OnTriggerEnter(Collider collider) {
+        if (omens == 5) {
+            Debug.Log("GAME OVER");
         }
     }
 }
