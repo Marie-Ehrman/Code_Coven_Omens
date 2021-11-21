@@ -22,14 +22,6 @@ public class HintSparkles : MonoBehaviour
 
     void HitByLight()
     {
-        if (mr.enabled == false)
-        {
-            sparkles.Play();
-        }
-
-        else if (mr.enabled == true)
-        {
-            sparkles.Stop();
-        }
+        sparkles.Play();
     }
 }

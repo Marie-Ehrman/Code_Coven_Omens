@@ -23,10 +23,24 @@ public class OmenActivation : MonoBehaviour
         if (isActive == false)
 
         {
-            if (activationPrimer.GetComponent<MeshRenderer>().enabled == true)
+            if (activationPrimer.GetComponent<MeshRenderer>() != null && activationPrimer.GetComponent<MeshRenderer>().enabled == true)
 
             {
                 GetComponent<MeshRenderer>().enabled = true;
+                gameManager.IncreaseOmens();
+                isActive = true;
+            }
+
+            else if (activationPrimer.GetComponent<MeshRenderer>() == null && activationPrimer.GetComponent<SkinnedMeshRenderer>() != null && activationPrimer.GetComponent<SkinnedMeshRenderer>().enabled == true)
+            {
+                GetComponent<SkinnedMeshRenderer>().enabled = true;
+                gameManager.IncreaseOmens();
+                isActive = true;
+            }
+
+            else if (activationPrimer.GetComponent<MeshRenderer>() == null && activationPrimer.GetComponent<SkinnedMeshRenderer>() == null && activationPrimer.GetComponent<SpriteRenderer>() != null && activationPrimer.GetComponent<SpriteRenderer>().enabled == true)
+            {
+                GetComponent<SpriteRenderer>().enabled = true;
                 gameManager.IncreaseOmens();
                 isActive = true;
             }

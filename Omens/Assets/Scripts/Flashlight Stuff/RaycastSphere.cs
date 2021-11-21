@@ -37,12 +37,23 @@ public class RaycastSphere : MonoBehaviour
 
             }
 
-            if (hit.collider.CompareTag("Interactable") && Input.GetButton("Fire1"))
+            if (hit.collider.CompareTag("Interactable") && Input.GetButton("Fire1") && hit.collider.GetComponent<MeshRenderer>() != null)
             {
                 hit.collider.GetComponent<MeshRenderer>().enabled = true;
             }
 
-            
+            else if (hit.collider.CompareTag("Interactable") && Input.GetButton("Fire1") && hit.collider.GetComponent<MeshRenderer>() == null && hit.collider.GetComponent<SkinnedMeshRenderer>() != null)
+            {
+                hit.collider.GetComponent<SkinnedMeshRenderer>().enabled = true;
+            }
+
+            else if (hit.collider.CompareTag("Interactable") && Input.GetButton("Fire1") && hit.collider.GetComponent<MeshRenderer>() == null && hit.collider.GetComponent<SkinnedMeshRenderer>() == null)
+            {
+                hit.collider.GetComponent<SpriteRenderer>().enabled = true;
+            }
+
+
+
         }
 
         else
