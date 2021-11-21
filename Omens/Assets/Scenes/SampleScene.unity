@@ -10297,7 +10297,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235637306}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9.062341, y: 0.706, z: 119.32843}
+  m_LocalPosition: {x: -10.64, y: 0.11, z: 119.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 915200952}
@@ -10935,7 +10935,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 50
+    maxNumParticles: 57
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -66432,14 +66432,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545195610}
-  m_LocalRotation: {x: 0.19623008, y: 0.6793335, z: 0.19622996, w: 0.67933315}
-  m_LocalPosition: {x: 7.960002, y: 2.46, z: 153.1968}
-  m_LocalScale: {x: 0.21380776, y: 0.21380773, z: 0.21380779}
+  m_LocalRotation: {x: -0.68020445, y: -0.19926795, z: 0.6784486, w: 0.19318813}
+  m_LocalPosition: {x: 7.871, y: 2.459, z: 153.196}
+  m_LocalScale: {x: 0.21380776, y: 0.21380773, z: 1.0618336}
   m_Children:
   - {fileID: 423375428}
   m_Father: {fileID: 323958000}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 32.223003}
+  m_LocalEulerAnglesHint: {x: 0.43400002, y: -90.273, z: 147.77501}
 --- !u!212 &1545195612
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67205,8 +67205,8 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 0
-    angle: 25
+    type: 4
+    angle: 87.5
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -67349,7 +67349,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
     arc:
-      value: 234.1
+      value: 248.7
       mode: 0
       spread: 0
       speed:
@@ -74444,7 +74444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689474743}
   m_LocalRotation: {x: -0.70710677, y: 0.000000014901161, z: -0.000000022351742, w: 0.7071068}
-  m_LocalPosition: {x: 8.161885, y: 2.3500001, z: 153.03711}
+  m_LocalPosition: {x: 8.08, y: 2.3500001, z: 153.03711}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 323958000}
@@ -75093,7 +75093,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 50
+    maxNumParticles: 57
     size3D: 0
     rotation3D: 0
     gravityModifier:

@@ -256,9 +256,6 @@
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.OSXStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\MacStandaloneSupport\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.10.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
