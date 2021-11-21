@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public GameManager gameManager;
 
+    //NUMBER OF OMENS NEEDED:*****Currently set to 4 fr testing because of raven sprite bug*****
+    int numberOfOmens = 4;
+
     //Change the slope limit, and step offset in the inspector to handle steps and slopes!
     public float speed = 12f;
     public float gravity = -9.81f;
@@ -63,9 +66,9 @@ public class PlayerMovement : MonoBehaviour
     void OnTriggerEnter(Collider collider)
     {
         print("COLLIDED");
-        if (gameManager.omens == 5)
+        if (gameManager.omens == numberOfOmens)
         {
-            print("GAME OVER");
+            gameManager.GameOverScreen();
         }
     }
 }

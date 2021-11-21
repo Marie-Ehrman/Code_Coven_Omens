@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Flashlight Stuff\RaycastSphere.cs" />
     <Compile Include="Assets\Scripts\FlickeringLights.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\OmenActivation.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />

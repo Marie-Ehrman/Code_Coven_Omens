@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public Text omensCounter;
     public Collider endGame;
+    public GameOver GameOver;
 
 
 
@@ -35,6 +36,10 @@ public class GameManager : MonoBehaviour
     {
         omens++;
 
+    }
+
+    public void GameOverScreen() {
+        GameOver.Setup();
     }
 
 
