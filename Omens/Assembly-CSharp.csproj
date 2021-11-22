@@ -54,7 +54,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
-    <Compile Include="Assets\Dialogue.cs" />
     <Compile Include="Assets\Laterns and candles\scripts\CameraFacing.cs" />
     <Compile Include="Assets\Laterns and candles\scripts\ExtendedFlycam.cs" />
     <Compile Include="Assets\Lowpoly Toon Cat Lite\Demo\Cat_Lite_Demo.cs" />
@@ -63,12 +62,14 @@
     <Compile Include="Assets\MagicMirror\Prefab\MirrorReflectionScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorScript.cs" />
     <Compile Include="Assets\One-Click_Wall_Materials\Scenes\Misc\MaterialChanger.cs" />
+    <Compile Include="Assets\Scripts\CountDown.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Flashlight Stuff\HintSparkles.cs" />
     <Compile Include="Assets\Scripts\Flashlight Stuff\LightHit.cs" />
     <Compile Include="Assets\Scripts\Flashlight Stuff\RaycastSphere.cs" />
     <Compile Include="Assets\Scripts\FlickeringLights.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\OmenActivation.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -637,6 +638,15 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -652,6 +662,9 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -660,18 +673,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

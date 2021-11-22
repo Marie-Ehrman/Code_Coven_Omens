@@ -307,6 +307,7 @@ GameObject:
   - component: {fileID: 422051788}
   - component: {fileID: 422051790}
   - component: {fileID: 422051789}
+  - component: {fileID: 422051791}
   m_Layer: 5
   m_Name: Dialoguebox
   m_TagString: Untagged
@@ -371,6 +372,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422051787}
   m_CullTransparentMesh: 0
+--- !u!114 &422051791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422051787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89711e477ee2cb4458cbcf7a92b28217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 510066386}
+  lines:
+  - 'One night at a school campus...Two girls entered because of a dare. Chloe: We
+    aren''t supposed to be here!We could get suspended if the security guards find
+    us! Mona: Relax, we aren''t getting caught.We just need to take a picture of
+    us in the classroom at midnight. So don''t chicken out and let''s do this. Chloe:
+    Fine...'
+  textSpeed: 1
 --- !u!1 &510066384
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,18 +448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'One Night....
-
-    We are not supposed to be here!
-
-    The guards are
-    going to catch us...
-
-    Shh... We won''t get caught!
-
-    All we got to do
-    is just take a picture of the classroom with us inside at night and we would
-    have won the dare.'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -501,7 +511,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -41.321465, y: 0, z: 0, w: 0}
+  m_margin: {x: -41.321465, y: 0, z: 0, w: -27.05616}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
