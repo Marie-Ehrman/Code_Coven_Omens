@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     public GameManager gameManager;
+
+    public Text hint;
+    bool lost = false;
+
 
     //NUMBER OF OMENS NEEDED
     int numberOfOmens = 5;
@@ -34,10 +40,10 @@ public class PlayerMovement : MonoBehaviour
         //radius, and mask as the layer mask (Tags & Layers -> Layers system. So mark it
         //as ground!!
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        if(isGrounded && velocity.y < 0)
+        if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
-        
+
         }
 
         float x = Input.GetAxis("Horizontal");
@@ -47,10 +53,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
-        
+
         //Physics equation for gravity. To determine velocity added. And yes, Sqrt is square root
         //good lord I am HORRIFIC AT MATH
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
@@ -59,16 +65,45 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
-        
+
+        CheckForLoss();
     }
 
 
     void OnTriggerEnter(Collider collider)
     {
-        print("COLLIDED");
         if (gameManager.omens == numberOfOmens)
         {
+            gameManager.WinGame();
             gameManager.GameOverScreen();
         }
+        else {
+            hint.gameObject.SetActive(true);
+        }
     }
+
+    void OnTriggerExit(Collider collider) {
+        hint.gameObject.SetActive(false);
+    }
+
+    void CheckForLoss() {
+        if (gameManager.globalTimer == 0)
+        {
+            lost = true;
+        }
+
+        if (lost) {
+            LoseGame();
+        }
+    }
+
+    void LoseGame()
+    {
+
+        velocity = Vector3.zero;
+        gameManager.LoseGame();
+            gameManager.GameOverScreen();
+
+    }
+
 }

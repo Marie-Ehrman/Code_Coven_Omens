@@ -13,7 +13,10 @@ public class GameManager : MonoBehaviour
 
     public Text omensCounter;
     public Text timer;
-    public float globalTimer = 180;
+
+    public Text hint;
+
+    public float globalTimer = 10;
 
     public Collider endGame;
     public GameOver GameOver;
@@ -35,6 +38,7 @@ public class GameManager : MonoBehaviour
 
         TimerClock();
 
+
     }
 
     public void IncreaseOmens()
@@ -49,8 +53,27 @@ public class GameManager : MonoBehaviour
     }
 
     void TimerClock() {
-        globalTimer -= Time.deltaTime;
-        timer.text = "TIME:  " +  Mathf.Round(globalTimer).ToString();
+
+        if (globalTimer > 0)
+        {
+            globalTimer -= Time.deltaTime;
+            timer.text = "TIME:  " + Mathf.Round(globalTimer).ToString();
+        }
+        else {
+            globalTimer = 0;
+        }
+
+    }
+
+    public void WinGame()
+    {
+        GameOver.WinGame();
+    }
+
+    public void LoseGame() {
+
+            GameOver.LoseGame();
+
     }
 
 
