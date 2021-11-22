@@ -8,6 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    [SerializeField]
+    public GameManager GameManager;
+
+
     public void Setup() {
         gameObject.SetActive(true);
         Cursor.visible = true;
