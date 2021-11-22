@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     public Text hint;
 
-    public float globalTimer = 10;
+    public float globalTimer = 180;
 
     public Collider endGame;
     public GameOver GameOver;

@@ -256,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -5}
+  m_AnchoredPosition: {x: 0, y: 57}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &242636317
@@ -324,7 +324,7 @@ RectTransform:
   m_GameObject: {fileID: 422051787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.8901613, y: 0.8306491, z: 1}
+  m_LocalScale: {x: 1.7869114, y: 0.50649655, z: 1}
   m_Children:
   - {fileID: 510066385}
   m_Father: {fileID: 123184107}
@@ -332,7 +332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -8.300003}
+  m_AnchoredPosition: {x: -10, y: -150}
   m_SizeDelta: {x: -580, y: -93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422051789
@@ -386,11 +386,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 510066386}
   lines:
-  - 'One night at a school campus...Two girls entered because of a dare. Chloe: We
-    aren''t supposed to be here!We could get suspended if the security guards find
-    us! Mona: Relax, we aren''t getting caught.We just need to take a picture of
-    us in the classroom at midnight. So don''t chicken out and let''s do this. Chloe:
-    Fine...'
+  - 'One night at a school campus...Two girls enter on a dare. Chloe: We aren''t
+    supposed to be here! We could get suspended if the security guards find us! Mona:
+    Relax, we aren''t getting caught. We just need to use the Ouija board at midnight.
+    So don''t chicken out! Chloe: Fine...'
   textSpeed: 0.15
 --- !u!1 &510066384
 GameObject:
@@ -419,7 +418,7 @@ RectTransform:
   m_GameObject: {fileID: 510066384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.33585, y: 1, z: 1}
+  m_LocalScale: {x: 0.70232046, y: 2.091173, z: 2.091173}
   m_Children: []
   m_Father: {fileID: 422051788}
   m_RootOrder: 0
@@ -458,7 +457,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4280427046
-  m_fontColor: {r: 0.3773585, g: 0.040939845, b: 0.040939845, a: 1}
+  m_fontColor: {r: 0.5849056, g: 0.03034888, b: 0.03034888, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

@@ -60748,7 +60748,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a659f02a6b019884d89da1acd4d68b23, type: 3}
-    m_FontSize: 27
+    m_FontSize: 19
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -73999,7 +73999,7 @@ MonoBehaviour:
   omensCounter: {fileID: 1792480177}
   timer: {fileID: 1314565495}
   hint: {fileID: 0}
-  globalTimer: 10
+  globalTimer: 180
   endGame: {fileID: 937044745}
   GameOver: {fileID: 1802596089}
 --- !u!1 &1606886880
